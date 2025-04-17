@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* overall container code */
+.container-fluid{
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: black;
+}
+
+/*End of overall container code */
+
+/* start of container inside code */
+.cal-text{
+    background-color: rgba(31, 29, 29, 0.605);
+    border-radius: 5px;
+}
+
+.cal-box{
+    width: 100%;
+    background-color: rgba(31,29,29,0.605);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.cal-box input:nth-child(1){
+    width: 100%;
+    border: none;
+    outline: none;
+    min-height: 60px;
+    font-size: 30px;
+}
+
+.cal-box input:nth-child(2){
+    width: 200px;
+    border: none;
+    outline: none;
+    min-height: 30px;
+    font-size: 15px;
+}
+
+.cal-numbers {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+}
+
+.cal-numbers button {
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    background-color: rgba(34, 32, 32, 0.836);
+    color: white;
+}
+
+
+/*End of container inside code*/
+
+@media only screen and (max-width:600px){
+
+    .container-fluid{
+        min-height: 100vh;
+        padding: 0;
+        display: flex;
+        align-items: end;
+    }
+    
+    .cal-text{
+        display: none;
+    }
+
+    .cal-box input:nth-child(2){
+        display: none;
+    }
+
+    
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Calculator</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <script src="https://kit.fontawesome.com/eb1939675a.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="index.css" />
+    </head>
+    <body>
+        <!--overall container code-->   
+        <div class="container-fluid" >
+
+            
+            <!--Calculator text box code-->
+            <div class="row text-white text-center mb-5 cal-text " ><h1>CALCULATOR</h1></div>
+            <!--End of Calculator text box code-->
+
+            <!--Calculator Box code-->
+            <div class="cal-box" >
+
+                <input class="text-end p-2 bg-black text-white mb-1 " id="displayvalue"  />
+                <input id="show" class="text-end p-2 bg-black text-white mb-1 " />
+
+                <div class="cal-numbers p-4 " >
+                    <button type="button" onclick="Allclear()" >C</button>
+                    <button type="button" onclick="Addvalue('%')" >%</button>
+                    <button type="button" onclick="Deletelast()" ><i class="fa-solid fa-delete-left"></i></button>
+                    <button type="button" class="bg-warning" onclick="Addvalue('/')" ><i class="fa-solid fa-divide"></i></button>
+
+                    <button type="button" onclick="Addvalue('7')" >7</button>
+                    <button type="button" onclick="Addvalue('8')" >8</button>
+                    <button type="button" onclick="Addvalue('9')" >9</button>
+                    <button type="button" class="bg-warning" onclick="Addvalue('*')" ><i class="fa-solid fa-xmark"></i></button>
+
+                    <button type="button" onclick="Addvalue('4')" >4</button>
+                    <button type="button" onclick="Addvalue('5')" >5</button>
+                    <button type="button" onclick="Addvalue('6')" >6</button>
+                    <button type="button" class="bg-warning" onclick="Addvalue('-')" >-</button>
+
+                    <button type="button" onclick="Addvalue('1')" >1</button>
+                    <button type="button" onclick="Addvalue('2')" >2</button>
+                    <button type="button" onclick="Addvalue('3')" >3</button>
+                    <button type="button" class="bg-warning" onclick="Addvalue('+')" >+</button>
+
+                    <button type="button" onclick="Addvalue('7')" >0</button>
+                    <button type="button" onclick="Totalvalue()" >=</button>
+
+                </div>
+
+            </div>
+            <!--End of Calculator box code-->
+
+        </div>
+        <!--End of overall container code-->
+
+        <script src="index.js" ></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    </body>
+</html>
